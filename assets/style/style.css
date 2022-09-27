@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 26px;
+}
+
+h2, h3, h4, strong {
+    padding-top: 15px;
+    color: #242F9B;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #646FD4;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h1, 
+.jumbotron p {
+    padding-top: 35px;
+}
+
+
+header nav {
+    background-color: #242F9B;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    font-weight: bold;
+}
+
+header nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+}
+
+.content {
+    width: 75%;
+}
+
+.content h2 {
+    padding-bottom: 20px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 60px 20px 20px;
+    margin-top: 20px;
+}
+
+.card .motif {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card .motif img {
+    width: 48%;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    width: 25%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+aside .profile {
+    width: 100%;
+}
+
+aside .profile img {
+    width: 65%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+aside h3, aside p {
+    padding-bottom: 10px;
+}
+
+
+footer {
+    background-color: #242F9B;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+
+/* media query */
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 40px 40px 0;
+    }
+
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    .content, aside {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    article {
+        margin-bottom: 40px;
+    }
+
+    aside .profile img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    body, main {
+        width: 100%;
+    }
+
+    .card .motif {
+        flex-direction: column;
+    }
+
+    .card .motif img {
+        width: 100%;
+    }
+}
